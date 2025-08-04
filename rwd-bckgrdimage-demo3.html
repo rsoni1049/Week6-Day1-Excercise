@@ -3,22 +3,37 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-
 body {
-  width: 100%;
-  background-image: url('images/water-lily.jpg');
-  background-repeat: no-repeat;
-  
-  background-color:rgb(203, 247, 220);
+    width: 100%;
+    min-height: 100vh;  /* Ensure body covers full viewport height */
+    background-image: url('images/water-lily.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(203, 247, 220);
+    margin: 0;  /* Remove default margin */
+    padding: 20px;  /* Add some padding for content */
+    color: white;  /* Better contrast for text */
+    font-family: Arial, sans-serif;
 }
 
+div {
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for content */
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+}
 </style>
 </head>
 <body>
 
-<p>Resize the browser window to see the effect.</p>
-
-<div></div>
+<div>
+    <h1>Responsive Full-Page Background</h1>
+    <p>Resize the browser window to see how the background image scales responsively.</p>
+    <p>The image will always cover the entire viewport while maintaining its aspect ratio.</p>
+</div>
 
 </body>
 </html>
