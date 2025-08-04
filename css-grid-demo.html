@@ -3,7 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-
 html {
     font-size: 22px;
 }
@@ -23,6 +22,24 @@ body {
   grid-gap: 1rem;
 }
 
+/* Default mobile layout (stacked) */
+.cards {
+  grid-template-columns: 1fr;
+}
+
+/* Medium screens (600px and up) - 2 columns */
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large screens (900px and up) - 3 columns */
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 </style>
 </head>
 <body>
@@ -41,7 +58,6 @@ body {
     <div class="card">ELEVEN</div>
     <div class="card">TWELVE</div>
 </div>
-
 
 </body>
 </html>
