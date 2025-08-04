@@ -3,13 +3,21 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-
+    .responsive-cover-bg {
+        width: 100%;
+        height: 500px;
+        background-image: url('images/water-lily.jpg');
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: rgb(203, 247, 220);
+    }
 </style>
 </head>
 <body>
 
-<img src="images/eifel-tower.jpg" width="560" height="445">
-<p>Resize the browser window to see how the image will scale when the width is less than 560px.</p>
+<div class="responsive-cover-bg"></div>
+<p>Resize the browser window to see how the background image scales responsively (using cover).</p>
 
 </body>
 </html>
